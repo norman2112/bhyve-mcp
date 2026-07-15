@@ -1,6 +1,12 @@
 # bhyve-mcp
 
-MCP server for [Orbit B-Hyve](https://orbitbhyve.com/) irrigation systems. Query and control sprinklers from Claude Code, Cursor, or any MCP-compatible client.
+An MCP server for [Orbit B-Hyve](https://orbitbhyve.com/) smart irrigation systems. Query device status, zones, and watering history — or start/stop watering, set rain delays, and manage programs — from Claude Code, Cursor, or any MCP-compatible client.
+
+## Why This Exists
+
+I built this to control my sprinkler system from the same AI tools I use for everything else. Instead of opening the B-Hyve app to check zone status or adjust a rain delay, I can do it from a Claude conversation or a Cursor terminal.
+
+It's also a good example of an MCP server that bridges REST (reads) and WebSocket (writes) APIs under a single interface — a different integration pattern than my other MCP servers which are pure REST or REST+SOAP.
 
 ## Features
 
